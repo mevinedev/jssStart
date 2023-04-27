@@ -55,6 +55,18 @@ console.log(y);
 //output is 5 because primitives are copied by value, so 'y' is not connected to 'x' in any way.
 //Objects are passed by reference. Primitives  are passed by value.
 
+function Dog(name) {
+  this.name = name;
+}
+
+Dog.prototype.bark = function () {
+  console.log(this.name + " likes barking! Bark!");
+}
+
+var max = new Dog("Max", "Buddy");
+max.bark();
+//this ouputs the text "Max likes barking! Bark"
+
 
 
 
