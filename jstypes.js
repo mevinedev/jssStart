@@ -41,8 +41,19 @@ function makeMultiplier(multiplier) {
   };
   
   return myFunFunc;
-}
+};
 
+var operation = makeMultiplier(10);
+console.log(operation(10));
+//the  output from the code above is 100.
+
+
+var x = 5;
+var y = x;
+x = 10;
+console.log(y);
+//output is 5 because primitives are copied by value, so 'y' is not connected to 'x' in any way.
+//Objects are passed by reference. Primitives  are passed by value.
 
 
 
