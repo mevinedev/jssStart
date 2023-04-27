@@ -31,6 +31,17 @@ null is false, so we continueconsole.log("Hello"), prints "Hello" to the console
 x > 5 is true, so we execute the body of the 'if' statement and print another "Hello". 
 So, the answer is that "Hello" will be printed to the console 2 times. */
 
+/*Defining a variable as an Object Literal accomplishes pretty much the same thing as defining a variable equal to 'new Object()'. 
+However, it's faster and easier to type up an object literal.*/
+
+//functions in Javascript
+function makeMultiplier(multiplier) {
+  var myFunFunc = function (x) {
+    return multiplier * x;
+  };
+  
+  return myFunFunc;
+}
 
 
 
