@@ -59,14 +59,28 @@ function Dog(name) {
   this.name = name;
 }
 
-Dog.prototype.bark = function () {
-  console.log(this.name + " likes barking! Bark!");
+unction Devs(name) {
+  this.name = name;
 }
 
-var max = new Dog("Max", "Buddy");
-max.bark();
-//this ouputs the text "Max likes barking! Bark"
+Devs.prototype.code = function () {
+  console.log(this.name + " like coding!");
+}
 
+var max = new Devs("Developers", "We");
+max.code();
+//this ouputs the text "Developers like coding!"
+
+var counter = 0;
+var myArray = ["Hello", 2, {handle: "developer!"}];
+for (var i = 0; i < myArray.length; i++) {
+  counter++;
+}
+console.log(counter);
+//output is 3
+
+
+ 
 
 
 
